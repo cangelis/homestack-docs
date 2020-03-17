@@ -29,5 +29,5 @@ jobs:
         config: ${{ secrets.SSH_CONFIG }}
     - run: sudo apt-get install yarn rsync openssh-client
     - run: yarn global add vuepress
-    - run: vuepress build
+    - run: /usr/local/bin/vuepress build
     - run: rsync -av --exclude=.git .vuepress/dist/ homestack:/var/www/homestack.dev/

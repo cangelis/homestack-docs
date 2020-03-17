@@ -43,4 +43,12 @@ module.exports = {
             { text: 'Docs', link: '/docs/' }
         ]
     },
+    plugins: [
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-160823686-1'
+            }
+        ]
+    ]
 };

@@ -25,7 +25,6 @@ jobs:
         known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
         config: ${{ secrets.SSH_CONFIG }}
 
-    - run: yarn global add vuepress
-    - run: yarn global bin
-    - run: /home/runner/.yarn/bin/vuepress build
+    - run: yarn install
+    - run: yarn build
     - run: rsync -av --exclude=.git .vuepress/dist/ homestack:/var/www/homestack.dev/

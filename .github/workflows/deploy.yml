@@ -1,7 +1,4 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Deploy Docs
 
 on:
   push:
@@ -13,21 +10,21 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 12.x
+
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
         config: ${{ secrets.SSH_CONFIG }}
-    - run: sudo apt-get install yarn rsync openssh-client
+
     - run: yarn global add vuepress
     - run: yarn global bin
     - run: /home/runner/.yarn/bin/vuepress build

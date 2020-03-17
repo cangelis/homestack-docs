@@ -4,7 +4,7 @@ Homestack is a docker based development environment which was designed to be yet
 
 - Quick learning curve
 - Extensible & customizable
-- Running multiple versions of a software at a time
+- Running multiple versions of a software simultaneously
 - Docker based
 - Fully featured environment rather than a template
 - Upgradable
@@ -21,9 +21,9 @@ Getting started to homestack is pretty quick. You can simply build and up withou
 It is fully customizable but in a good way.. Homestack is not a template to develop your own environment, it is a fully featured environment itself. 
 It is designed to be extensible which means you won't be breaking the core features while customizing it for your needs.
 
-## Multiple versions at a time
+## Multiple versions simultaneously
 
-Homestack's fundamental purpose is to run multiple versions of a software at the same time. For example you'll be able to be running MySQL 8.0 and 5.7 at the same time so 
+Homestack's fundamental purpose is to run multiple versions of a software simultaneously. For example you'll be able to be running MySQL 8.0 and 5.7 at the same time so 
 you'll be working on projects that have different needs.
 
 ## Docker based

@@ -24,5 +24,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: sudo apt-get install yarn rsync openssh
+    - run: sudo apt-get install yarn rsync openssh-client
     - run: yarn global add vuepress

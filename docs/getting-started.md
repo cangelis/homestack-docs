@@ -28,7 +28,7 @@ However, you can set up the environment into another directory and configure the
 First clone the repository and `cd` into it.
 
 ```sh
-$ git clone git@github.com:cangelis/homestack.git
+$ git clone https://github.com/cangelis/homestack.git
 $ cd homestack
 $ git checkout 1.x
 ```

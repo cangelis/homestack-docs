@@ -6,7 +6,7 @@ actionText: Get Started →
 actionLink: /docs/
 features:
 - title: Multi version services
-  details: Run multiple versions of a service at the same time.
+  details: Run multiple versions of a service simultaneously.
 - title: Docker-Powered
   details: It's docker based and pretty efficient! Don't pollute your machine. Destroy it when you break anything.
 - title: Extensible

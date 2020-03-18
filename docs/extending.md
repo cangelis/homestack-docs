@@ -92,7 +92,7 @@ Place your custom `nginx.conf` file into `<Homestack_root>/build/usr` and copy i
 ```
 #!/bin/sh
 
-$ cp $BUILD_FOLDER/usr/nginx.conf /etc/nginx/nginx.conf
+cp $BUILD_FOLDER/usr/nginx.conf /etc/nginx/nginx.conf
 ```
 
 ::: tip
@@ -107,7 +107,7 @@ This is how you can switch root's default login shell from ash to bash in `.inst
 ```
 #!/bin/sh
 
-$ sed -i 's#root:x:0:0:root:/root:/bin/ash#root:x:0:0:root:/root:/bin/bash#g' /etc/passwd
+sed -i 's#root:x:0:0:root:/root:/bin/ash#root:x:0:0:root:/root:/bin/bash#g' /etc/passwd
 ```
 
 ::: tip

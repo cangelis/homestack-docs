@@ -33,7 +33,8 @@ module.exports = {
                         'services/mysql',
                         'services/redis',
                         'services/elasticsearch',
-                        'services/mailhog'
+                        'services/mailhog',
+                        'services/varnish'
                     ]
                 }
             ]

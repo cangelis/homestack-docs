@@ -52,6 +52,7 @@ services:
       my-network:
         aliases:
           - api.my-service.com
+      default:
 
   php73:
     networks:

@@ -92,7 +92,7 @@ Place your custom `nginx.conf` file into `<Homestack_root>/build/usr` and copy i
 ```
 #!/bin/sh
 
-$ cp $BUILD_FOLDER/usr/nginx.conf /etc/nginx/nginx.conf
+cp $BUILD_FOLDER/usr/nginx.conf /etc/nginx/nginx.conf
 ```
 
 ::: tip

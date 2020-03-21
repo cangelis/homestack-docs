@@ -11,14 +11,14 @@ In your `.install` script..
 
 cd $BUILD_FOLDER
 
-scripts/alpine/ngrok.sh
+scripts/ngrok.sh
 ```
 
 ngrok's download URL is hard-coded in the `ngrok.sh`. If the url becomes outdated you can grab a valid one from ngrok's site use it like this..
 
 
 ```sh
-NGROK_DOWNLOAD_URL=https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip scripts/alpine/ngrok.sh
+NGROK_DOWNLOAD_URL=https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip scripts/ngrok.sh
 ```
 
 `ngrok` executable will be installed to `/usr/bin` directory and should be in your PATH already.

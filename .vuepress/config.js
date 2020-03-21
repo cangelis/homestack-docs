@@ -36,7 +36,16 @@ module.exports = {
                         'services/mailhog',
                         'services/varnish'
                     ]
-                }
+                },
+                {
+                    title: 'Useful Programs',
+                    collapsable: false,
+                    sidebarDepth: 1,
+                    children: [
+                        'programs/sshd',
+                        'programs/ngrok'
+                    ]
+                },
             ]
         },
         nav: [

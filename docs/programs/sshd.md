@@ -25,7 +25,7 @@ scripts/alpine/sshd.sh
 and build the container again.
 
 ```sh
-homestad build php73
+homestack build php73
 ```
 
 `sshd.sh` script installs ssh server and configures the supervisor installed accordingly.
